@@ -1,5 +1,5 @@
 class Tokenizer:
-    def __init__(self, separators=[' ', '-', "'"]):
+    def __init__(self, separators=[' ', '-', "'", '.', ',']):
         self.separators = separators
 
     def tokenize(self, text):
