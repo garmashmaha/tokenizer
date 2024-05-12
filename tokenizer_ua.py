@@ -18,3 +18,9 @@ class Tokenizer:
         if word:
             tokens.append(word)
         return tokens
+
+# Testowanie
+tokenizer = Tokenizer()
+text = "По-перше, постіль не була м'якою, а по-друге - це взагалі не можна назвати постіллю."
+tokens = tokenizer.tokenize(text)
+print(tokens)
