@@ -19,8 +19,19 @@ class Tokenizer:
             tokens.append(word)
         return tokens
 
+#Testowanie odczyt z pliku 
+#    def tokenize_file(self, file_path):
+#        with open(file_path, 'r', encoding='utf-8') as file:
+#            text = file.read()
+#        return self.tokenize(text)
+        
 # Testowanie
 tokenizer = Tokenizer()
 text = "По-перше, постіль не була м'якою, а по-друге - це взагалі не можна назвати постіллю."
 tokens = tokenizer.tokenize(text)
 print(tokens)
+
+# Testowanie odczyt z pliku
+#tokenizer = Tokenizer()
+#tokens = tokenizer.tokenize_file('ścieżka_do_pliku.txt')
+#print(tokens)
